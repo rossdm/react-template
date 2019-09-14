@@ -14,7 +14,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint:fix": "eslint './src/**/*.{js,jsx,ts,tsx}' || true",
+    "lint:fix": "eslint --fix './src/**/*.{js,jsx,ts,tsx}' || true",
     "lint": "eslint './src/**/*.{js,jsx,ts,tsx}' || true"
   },
   "eslintConfig": {

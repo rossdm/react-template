@@ -13,7 +13,9 @@
       "jest": true
     },
     "rules": {
-      "prettier/prettier": ["error", { "singleQuote": true }]
+      "prettier/prettier": ["error", { "singleQuote": true }],
+      "@typescript-eslint/ban-ts-ignore": "off",
+      "@typescript-eslint/no-use-before-define": "off"
     },
     "settings": {
       "react": {

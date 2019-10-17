@@ -10,7 +10,7 @@ export default function App(): ReactElement {
     todos: [] as Todo[],
     loaded: false
   });
-  
+
   useEffect(() => {
     const load = async (): Promise<void> => {
       const todo = await getTodo(1);
@@ -28,7 +28,7 @@ export default function App(): ReactElement {
   return (
     <div className="App">
       <header className="App-header">
-      <List todos={todos} />
+        <List todos={todos} />
       </header>
     </div>
   );

@@ -13,7 +13,7 @@ const List = styled.ul`
 
 const Field = styled.div`
   display: block;
-  text-align:left;
+  text-align: left;
 `;
 
 const Completed = styled(Field)`

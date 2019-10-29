@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react';
+import React, { FC } from 'react';
 
 import Todo from 'types/Todo';
 
@@ -32,7 +32,7 @@ interface Props {
   todos: Todo[];
 }
 
-export default function TodoList({ todos }: Props): ReactElement {
+const TodoList: FC<Props> = ({ todos }) => {
   return (
     <List>
       {todos.map(function(todo, index) {
@@ -48,4 +48,6 @@ export default function TodoList({ todos }: Props): ReactElement {
       })}
     </List>
   );
-}
+};
+
+export default TodoList;

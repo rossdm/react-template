@@ -1,11 +1,11 @@
-import React, { ReactElement, useEffect, useState } from 'react';
+import React, { FC, useEffect, useState } from 'react';
 import './App.css';
 
 import List from 'components/TodoList';
 import { getTodo } from 'service/TodoService';
 import Todo from 'types/Todo';
 
-export default function App(): ReactElement {
+const App: FC = () => {
   const [state, setState] = useState({
     todos: [] as Todo[],
     loaded: false
@@ -32,4 +32,6 @@ export default function App(): ReactElement {
       </header>
     </div>
   );
-}
+};
+
+export default App;
